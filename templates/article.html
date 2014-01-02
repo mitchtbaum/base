@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+
+{% block content %}        
+
+  <article class="post">
+    {% include 'widgets/article-title.html' %}
+
+    {%include 'widgets/meta.html'%}
+
+    <section class="post_content">
+      {{ article.content }}
+    </section>
+
+  </article>
+{% endblock %}

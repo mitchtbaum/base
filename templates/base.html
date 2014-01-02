@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    {% include 'headers/meta.html' %}
+
+    {% include 'headers/stylesheets.html' %}
+
+    {% include 'headers/feeds.html' %}
+
+  </head>
+
+  <body>
+    <div class="pure-g-r content">
+      {% block content %}
+      {% endblock %}
+
+    </div>
+  </body>
+</html>
