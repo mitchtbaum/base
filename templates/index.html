@@ -5,19 +5,20 @@
 {% endblock %}
 
 {% block content %}
+  <div class="grid pure-g-r">
+    <div id="header" class="pure-u-1-5">
+      {% include 'widgets/header.html' %}
+    </div>
 
-  <div id="header" class="pure-u-1-5">
-    {% include 'widgets/header.html' %}
-  </div>
+    <div id="menu" class ="pure-u-1-5">
+      {% include 'widgets/menu.html' %}
 
-  <div id="menu" class ="pure-u-1-5">
-    {% include 'widgets/menu.html' %}
+      {% include 'widgets/categories-list.html' %}
+    </div>
 
-    {% include 'widgets/categories-list.html' %}
-  </div>
-
-  <div id="articles-index" class="pure-u-3-5">
-    {% include 'widgets/articles-index.html' %}
+    <div id="articles-index" class="pure-u-3-5">
+      {% include 'widgets/articles-index.html' %}
+    </div>
   </div>
 
 {% endblock %}

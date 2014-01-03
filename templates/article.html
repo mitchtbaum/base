@@ -3,15 +3,27 @@
 {% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
 
 {% block content %}        
+  <div class="grid pure-g-r">
+    <div class="sidebar pure-u-2-5">
+      <div class="logo pure-u-2-3">
+        {% include 'widgets/logo.html' %}
+      </div>
+      <div class="categories-list pure-u-2-3">
+        {% include 'widgets/categories-list.html' %}
+      </div>
+    </div>
 
-  <article class="post">
-    {% include 'widgets/article-title.html' %}
+    <div class="article pure-u-3-5">
 
-    {%include 'widgets/meta.html'%}
-
-    <section class="post_content">
-      {{ article.content }}
-    </section>
-
-  </article>
+        <section id="post" class="article">
+          <header class="header-article">
+            {% include 'widgets/article-title.html' %}
+            {% include 'widgets/article-meta.html' %}
+          </header>
+          <section class="post_content">
+            {{ article.content }}
+          </section>
+        </section>
+    </div>>
+  </div>
 {% endblock %}
