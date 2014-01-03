@@ -29,14 +29,14 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
-.pure-u {
-  padding: 1em;
-}
-.sidebar {
+/*.pure-u
+  padding 1em*/
+.left-wrapper {
   text-align: center;
 }
 .logo {
   margin-top: 15px;
+  display: inline-block;
 }
 .side-navigation-li {
   background: #fff;
@@ -62,10 +62,13 @@ ul {
     height: 100%;
     width: 100%;
     text-decoration: none;*/
-.article-wrapper {
-  background: #fff;
-  margin-top: 10px;
-}
+.article-wrapper,
+/*  background: #fff
+*/ margin-top 10px,
 .article-title {
   text-align: center;
+}
+article {
+  margin-right: 10px;
+  background: #fff;
 }

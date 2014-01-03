@@ -5,7 +5,7 @@
 {% block content %}        
   <div class="root-layout pure-g-r">
     <div class="left pure-u-2-5">
-      <div class="sidebar pure-u-1">
+      <div class="left-wrapper pure-u-1">
         <div class="logo pure-u-2-3">
           {% include 'widgets/logo.html' %}
         </div>
@@ -13,28 +13,28 @@
           {% include 'widgets/categories-list.html' %}
         </div>
       </div>
-  </div>
-
-  <div class="right pure-u-3-5">
-    <div class="quote pure-u-1">
-      {% include 'widgets/quote.html' %}
     </div>
 
-    <div class="article-wrapper pure-u-1">
-      <article class="pure-u-1">
-        <header class="article-header">
-          {% include 'widgets/article-meta.html' %}
-          <hr>
-          
-          {% include 'widgets/article-title.html' %}
-        </header>
+    <div class="right pure-u-3-5">
+      <div class="right-wrapper pure-u-1">
+      <div class="quote pure-u-1">
+        {% include 'widgets/quote.html' %}
+      </div>
 
-        <section class="article-content">
-          {{ article.content }}
-        </section>
-      </article>
+      <div class="article-wrapper pure-u-1">
+        <article class="pure-u-1">
+          <header class="article-header">
+            {% include 'widgets/article-meta.html' %}
+            <hr>
+            
+            {% include 'widgets/article-title.html' %}
+          </header>
+
+          <section class="article-content">
+            {{ article.content }}
+          </section>
+        </article>
+      </div>
     </div>
-  </div>
-
   </div>
 {% endblock %}

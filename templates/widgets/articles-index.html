@@ -3,7 +3,7 @@
   {% for article in (articles_page.object_list if articles_page else articles) %}  
     <article class="post">
       <h2 class="title"><a href="{{ SITEURL }}/{{ article.url}}">{{ article.title }}</a></h2>
-      {%include 'widgets/meta.html'%}
+      {%include 'widgets/article-meta.html'%}
 
       <section class="post_content">
         {{ article.summary }}<br />
