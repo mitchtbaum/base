@@ -33,6 +33,8 @@ a:focus {
 }
 .sidebar {
   text-align: center;
+}
+.logo {
   margin-top: 15px;
 }
 .side-navigation-li {
@@ -41,6 +43,7 @@ a:focus {
 }
 .categories-list {
   padding: 1em;
+  width: 222px;
 }
 ul {
   text-align: left;
@@ -48,4 +51,12 @@ ul {
 .logo-image {
   padding: 2em;
   background: #fff;
+}
+.quote-text {
+  background: #fff;
+  margin-top: 5px;
+}
+.article {
+  background: #fff;
+  margin-top: 10px;
 }
