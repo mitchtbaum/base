@@ -1,0 +1,10 @@
+<div class="side-navigation-li pure-u">
+<nav>
+  <h3>Categories</h3>
+  <ul>
+  {% for cat, null in categories %}
+    <li{%- if cat == category %} class="active"{% endif -%}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat.name|title }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+</div>
