@@ -20,17 +20,19 @@
       {% include 'widgets/quote.html' %}
     </div>
 
-    <div class="article pure-u-1">
-      <section id="post" class="article">
-        <header class="header-article">
-          {% include 'widgets/article-title.html' %}
+    <div class="article-wrapper pure-u-1">
+      <article class="pure-u-1">
+        <header class="article-header">
           {% include 'widgets/article-meta.html' %}
+          <hr>
+          
+          {% include 'widgets/article-title.html' %}
         </header>
 
-        <section class="post_content">
+        <section class="article-content">
           {{ article.content }}
         </section>
-      </section>
+      </article>
     </div>
   </div>
 
