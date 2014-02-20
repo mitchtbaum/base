@@ -16,8 +16,10 @@
        {% include 'widgets/article-meta.html' %}
     {% endblock %}
 
-    <div id="article-content">
-      {{ article.content }}
-    </div>
+    {% block article_content %}
+      <div id="article-content">
+        {{ article.content }}
+      </div>
+    {% endblock %}
   </div>
 {% endblock %}
