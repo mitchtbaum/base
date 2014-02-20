@@ -7,22 +7,19 @@
 {% block content %}   
   {{ super() }}
 
-  <div class="right pure-u-4-5">
-    <div class="right-wrapper pure-u-1">
+  <div id="article" class="pure-u-4-5">
+    {% block article_title%}
+      {% include 'widgets/article-title.html' %}
+    {% endblock %}
 
-    <div class="article-wrapper pure-u-1">
-      <article class="pure-u-1">
-        <header class="article-header">
-          {% include 'widgets/article-meta.html' %}
-          <hr>
-          
-          {% include 'widgets/article-title.html' %}
-        </header>
+    {% block article_meta%}
+      <div id="article-meta">
+       {% include 'widgets/article-meta.html' %}
+      </div>
+    {% endblock %}
 
-        <section class="article-content">
-          {{ article.content }}
-        </section>
-      </article>
-    </div>
+    <section class="article-content">
+      {{ article.content }}
+    </section>
   </div>
 {% endblock %}

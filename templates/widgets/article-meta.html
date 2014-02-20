@@ -1,5 +1,20 @@
-<details class="meta">
-  Publié le <time datetime="{{ article.date.isoformat() }}" pubdate="pubdate">{{ article.locale_date }}</time>
-  {% if article.author %} par {{ article.author }}{% endif %} dans «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>».  
-  {% if article.tags %}Mots-clés: {% for tag in article.tags %}{%if loop.index > 1%}, {%endif%}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}</p>{% endif %}
-</details> 
+<div id="article-meta">
+  Published by {% if article.author %}
+    {{ article.author }}
+  {% endif %}
+  on 
+  <time datetime="{{ article.date.isoformat() }}" pubdate="pubdate">{{ article.locale_date }}
+  </time>
+  <br>
+  Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  <br>
+  {% if article.tags %}Tags: 
+    {% for tag in article.tags %}
+      {%if loop.index > 1%}, 
+      {%endif%}
+      <a href="{{ SITEURL }}/{{ tag.url }}">
+        {{ tag }}
+      </a>
+    {% endfor %}
+  {% endif %}
+</div>
