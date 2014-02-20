@@ -4,7 +4,9 @@
   {{ SITENAME }} - {{ article.title }}
 {% endblock %}
 
-{% block content %}        
+{% block content %}   
+  {{ super() }}
+     
   <div class="left pure-u-2-5">
     <div class="left-wrapper pure-u-1">
       <div class="categories-list pure-u-2-3">
