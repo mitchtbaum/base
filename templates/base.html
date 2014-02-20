@@ -11,6 +11,11 @@
   <body>
     <div class="content pure-g-r">
       {% block content %}
+        {% block logo %}
+          <div class="logo pure-u-1-6">
+            {% include 'widgets/logo.html' %}
+          </div>
+        {% endblock %}
       {% endblock %}
     </div>
   </body>
