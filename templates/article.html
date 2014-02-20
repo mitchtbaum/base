@@ -13,13 +13,11 @@
     {% endblock %}
 
     {% block article_meta%}
-      <div id="article-meta">
        {% include 'widgets/article-meta.html' %}
-      </div>
     {% endblock %}
 
-    <section class="article-content">
+    <div id="article-content">
       {{ article.content }}
-    </section>
+    </div>
   </div>
 {% endblock %}
