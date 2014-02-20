@@ -22,5 +22,6 @@ Base is a starter theme for [Pelican](https://github.com/getpelican/pelican).
 ### Credits
 * Big thanks to [lightweight theme](https://github.com/getpelican/pelican-themes/tree/master/lightweight) for providing a great starting point for this project.
 * Big thanks to Pelican maintainers and contributors.
+* Big thanks to the [Drupal Project](https://drupal.org) and its [Basic Theme](http://drupalcode.org/project/basic.git/tree/refs/heads/8.x-1.x:/templates)
 
 Thank you.  Namaste.
