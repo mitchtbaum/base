@@ -5,18 +5,22 @@
 {% endblock %}
 
 {% block content %}
-  <h2 class="page_title">
-    List of Tags
-  </h2>
-  <ul id="tag_list">
-    {% for tag, articles in tags %}
-      <li>
-        <h3>
-          <a href="{{SITEURL}}/{{tag.url}}">
-            {{ tag }}
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
+  {{ super() }}
+
+  <div id="tags-index" class="pure-u-4-5">
+    <h2 class="page_title">
+      List of Tags
+    </h2>
+    <ul id="tag_list">
+      {% for tag, articles in tags %}
+        <li>
+          <h3>
+            <a href="{{SITEURL}}/{{tag.url}}">
+              {{ tag }}
+            </a>
+          </h3>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}
