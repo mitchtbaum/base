@@ -1,0 +1,15 @@
+{% block article_title %}
+  <h2 class="article-title">
+    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+  </h2>
+{% endblock %}
+
+{% block article_meta %}
+   {% include 'widgets/article-meta.html' %}
+{% endblock %}
+
+{% block article_summary %}
+  <div id="article-summary">
+    {{ article.summary }}
+  </div>
+{% endblock %}
