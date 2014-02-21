@@ -15,5 +15,3 @@ Base is a starter theme for [Pelican](https://github.com/getpelican/pelican).  (
 * Pelican maintainers and contributors for an amazing framework.
 * [Lightweight Theme](https://github.com/getpelican/pelican-themes/tree/master/lightweight) for providing a great starting point for this project.
 * The [Drupal Project](https://drupal.org) and themes like [Basic Theme](https://drupal.org/project/basic) for rapidly prototyping great web technology.
-
-Namaste
