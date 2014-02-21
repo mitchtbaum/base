@@ -15,24 +15,24 @@
           <div class="logo pure-u-1-6">
             {% include 'widgets/logo.html' %}
           </div>
+        {% endblock%}
 
-          {% block header %}
-            <div id="header" class="pure-u-5-6">
-              {% include 'widgets/header.html' %}
-            </div>
-          {% endblock %}  
-          
-          {% block menu %}
-            <div id="menu" class="pure-u-1">
-              {% include 'widgets/menu.html' %}
-            </div>
-          {% endblock %}
+        {% block header %}
+          <div id="header" class="pure-u-5-6">
+            {% include 'widgets/header.html' %}
+          </div>
+        {% endblock %}  
+        
+        {% block menu %}
+          <div id="menu" class="pure-u-1">
+            {% include 'widgets/menu.html' %}
+          </div>
+        {% endblock %}
 
-          {% block categories %}
-            <div id="categories" class="pure-u-1-5">
-              {% include 'widgets/categories-list.html' %}
-            </div>
-          {% endblock %}
+        {% block categories %}
+          <div id="categories" class="pure-u-1-5">
+            {% include 'widgets/categories-list.html' %}
+          </div>
         {% endblock %}
       {% endblock %}
     </div>
