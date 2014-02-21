@@ -1,15 +1,6 @@
-<!-- Articles list -->
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}  
-    <article class="post">
-      <h2 class="title"><a href="{{ SITEURL }}/{{ article.url}}">{{ article.title }}</a></h2>
-      {%include 'widgets/article-meta.html'%}
-
-      <section class="post_content">
-        {{ article.summary }}<br />
-        <a class="more" href="{{ SITEURL }}/{{ article.url }}">Lire la suite...</a>
-      </section>
-    </article>
+    {% include 'widgets/article-summary.html' %}
   {% endfor %}
 {% endif %}
 
