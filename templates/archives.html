@@ -1,23 +1,27 @@
 {% extends "base.html" %}
 
-{%block title %}
+{% block title %}
   {{ SITENAME }} - Archives
-{%endblock%}
+{% endblock %}
 
 {% block content %}
-  <h2 class="page_title">Archives</h1>
-  <table id="archives">
-    <tbody>
-      <tr>
-        <th>Date</th>
-        <th>Article</th>
-      </tr>
-  {% for article in dates %}
-      <tr>
-        <td>{{ article.date.locale_date }}</td>
-        <td><a href='{{ article.url }}'>{{ article.title }}</a></td>
-      </tr>
-  {% endfor %}
-    </tbody>
-  </table>
+  {{ super() }}
+
+  <div id="archives" class="pure-u-4-5">
+    {% block archives %}
+      <h1>Archives</h1>
+
+      <div id="archives-list">
+        <dl>
+          {% for article in dates %}
+            <dt>{{ article.locale_date }}</dt>
+            <dd>
+              <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}
+              </a>
+            </dd>
+          {% endfor %}
+        </dl>
+      </div>
+    {% endblock %}
+  </div>
 {% endblock %}
