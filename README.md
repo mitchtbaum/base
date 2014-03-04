@@ -14,8 +14,3 @@ Note:  This patch is necessary, [Inherit from arbitrary theme #1092](https://git
 ### Included Libraries
 * [Normalize.css](https://github.com/necolas/normalize.css/) is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.
 * [PureCSS Grids](http://purecss.io/grids/) are easy to work with, and very powerful.
-
-### Thank you
-* Pelican maintainers and contributors for an amazing framework.
-* [Lightweight Theme](https://github.com/getpelican/pelican-themes/tree/master/lightweight) for providing a great starting point for this project.
-* The [Drupal Project](https://drupal.org) and themes like [Basic Theme](https://drupal.org/project/basic) for rapidly prototyping great web technology.
