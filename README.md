@@ -2,7 +2,7 @@
 
 Base is a starter theme for [Pelican](https://github.com/getpelican/pelican).  You can use it to quickly and easily develop your own theme.
 
-Note:  This patch is necessary, [Inherit from arbitrary theme #1092](https://github.com/getpelican/pelican/issues/1092).)
+Note:  This patch is necessary, [Inherit from arbitrary theme #1092](https://github.com/getpelican/pelican/issues/1092).
 
 ![Base Theme Screenshot](../master/screenshot.png?raw=true)
 
