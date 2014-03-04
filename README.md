@@ -2,6 +2,8 @@
 
 Base is a starter theme for [Pelican](https://github.com/getpelican/pelican).  (Currently, it depends on a patch to [Inherit from arbitrary theme #1092](https://github.com/getpelican/pelican/issues/1092).)
 
+![Base Theme Screenshot](../blob/master/screenshot.png?raw=true)
+
 ### Uses
 * Organize and override:  All templates' page elements are logically separated in [Jinja blocks](http://jinja.pocoo.org/docs/templates/#block), as "widgets", and can easily be changed without modifying the base theme.
 * Compose your templates:  Layouts are easy to build using grids and are easy to fill with reusable widget code.
