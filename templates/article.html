@@ -10,11 +10,11 @@
   {% block article %}
     <div id="article" class="pure-u-4-5">
       {% block article_title %}
-        {% include 'widgets/article-title.html' %}
+        {% include '!base/widgets/article-title.html' %}
       {% endblock %}
 
       {% block article_meta %}
-         {% include 'widgets/article-meta.html' %}
+         {% include '!base/widgets/article-meta.html' %}
       {% endblock %}
 
       {% block article_content %}

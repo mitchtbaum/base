@@ -1,7 +1,7 @@
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}  
-    {% include 'widgets/article-summary.html' %}
+    {% include '!base/widgets/article-summary.html' %}
   {% endfor %}
 {% endif %}
 
-{% include 'widgets/articles-pagination.html' %}
+{% include '!base/widgets/articles-pagination.html' %}
